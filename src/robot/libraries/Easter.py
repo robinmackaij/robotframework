@@ -16,7 +16,7 @@
 from robot.api import logger
 
 
-def none_shall_pass(who):
+def none_shall_pass(who: object) -> None:
     if who is not None:
         raise AssertionError('None shall pass!')
     logger.info(
